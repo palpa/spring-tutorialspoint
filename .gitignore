@@ -1,0 +1,23 @@
+#java specific
+*.class
+
+bin
+gen
+target
+.settings
+.classpath
+.project
+*.keystore
+*.swp
+*.orig
+*.log
+*.properties
+seed.txt
+map.txt
+
+## generic files to ignore
+*~
+*.lock
+*.DS_Store
+*.swp
+*.out
