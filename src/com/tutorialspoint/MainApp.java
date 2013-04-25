@@ -9,8 +9,12 @@ public class MainApp {
 		AbstractApplicationContext context = new ClassPathXmlApplicationContext(
 				"Beans.xml");
 
-		HelloWorld obj = (HelloWorld) context.getBean("helloWorld");
-		obj.getMessage();
+//		Cuadernillo unCuadernillo = (Cuadernillo) context.getBean("cuadernillo");
+//		unCuadernillo.imprimirOrdenImpresion();
+		
+		LibroImpreso unLibroImpreso = (LibroImpreso) context.getBean("libroImpreso");
+		unLibroImpreso.imprimirLibro();
+		
 		context.registerShutdownHook();
 	}
 }

@@ -5,9 +5,17 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-	<bean id="helloWorld" class="com.tutorialspoint.HelloWorld"
-		init-method="init" destroy-method="destroy">
-		<property name="message" value="Hello World!" />
+
+	<bean id="libroImpreso" class="com.tutorialspoint.LibroImpreso">
+		<constructor-arg index="0" value="3" />
+		<constructor-arg index="1" value="13" />
+	</bean>
+
+
+	<bean id="cuadernillo" class="com.tutorialspoint.Cuadernillo">
+		<constructor-arg index="0" value="2" />
+		<constructor-arg index="1" value="1" />
+		<constructor-arg index="2" value="8" />
 	</bean>
 
 </beans>
